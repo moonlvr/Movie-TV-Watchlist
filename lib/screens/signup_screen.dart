@@ -245,11 +245,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             style: TextStyle(color: AppColors.textSecondary)),
                         GestureDetector(
                           onTap: _goToLogin,
-                          child: const Text(
-                            'Log in',
-                            style: TextStyle(
-                              color: AppColors.primary,
-                              fontWeight: FontWeight.w600,
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: const Text(
+                              'Log in',
+                              style: TextStyle(
+                                color: AppColors.primary,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ),

@@ -186,12 +186,15 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         GestureDetector(
                           onTap: () {},
-                          child: const Text(
-                            'Forgot password?',
-                            style: TextStyle(
-                              color: AppColors.primary,
-                              fontSize: 12,
-                              fontWeight: FontWeight.w600,
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: const Text(
+                              'Forgot password?',
+                              style: TextStyle(
+                                color: AppColors.primary,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ),
@@ -212,11 +215,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             style: TextStyle(color: AppColors.textSecondary)),
                         GestureDetector(
                           onTap: _goToSignUp,
-                          child: const Text(
-                            'Sign up',
-                            style: TextStyle(
-                              color: AppColors.primary,
-                              fontWeight: FontWeight.w600,
+                          child: MouseRegion(
+                            cursor: SystemMouseCursors.click,
+                            child: const Text(
+                              'Sign up',
+                              style: TextStyle(
+                                color: AppColors.primary,
+                                fontWeight: FontWeight.w600,
+                              ),
                             ),
                           ),
                         ),
